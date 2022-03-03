@@ -45,3 +45,13 @@ Ne pas fixer la taille des écrans car ils doivent être lisibles et scrollables
     - Dans Android Studio, ouvrir les fichiers `.xml` et regarder s'il ya. des warning sur les components
 
 2. Effectuer les modifications suggérées par Android Studio et *Accessibility Scanner*. Tester à nouveau l'application avec le TalkBack
+
+## Solution
+
+1. Les couleurs
+    - Le contraste de la question n'est pas suffisant, il faut donc le remplacer par une couleur plus foncée afin de respecter un ratio supérieur à 4,50 
+2. Ajout des descriptions
+    - Android Studio affiche un warning concertant la description des images. En effet, il faut la rajouter avec le champs `android:contentDescription`
+    - Lorsque le TalkBack énonce un élement `Button`, il ajoute le mot "bouton" au libellé fourni par le développeur. Il n'est donc pas nécessaire d'inclure d'informations sur le type ou l'état dans la description.
+3. La taille des boutons
+    - La zone de clique des boutons est trop petite (inférieure à 48dp x 48dp), il faut donc ajouter une taille minimale à l'aide des champs `android:minWidth` et `android:minHeight`
