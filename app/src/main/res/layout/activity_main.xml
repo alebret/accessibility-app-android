@@ -14,7 +14,6 @@
             android:id="@+id/ic_valid"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:scaleType="center"
             app:layout_constraintEnd_toStartOf="@+id/ic_cancel"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/ic_cancel"
