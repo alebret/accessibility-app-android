@@ -3,4 +3,6 @@
     <string name="question">Aimes-tu le fromage ?</string>
     <string name="yes">Oui</string>
     <string name="no">Non</string>
+    <string name="descr_bt_cancel">Bouton annuler</string>
+    <string name="descr_bt_valid">Bouton valider</string>
 </resources>
