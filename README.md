@@ -48,8 +48,11 @@ Ne pas fixer la taille des écrans car ils doivent être lisibles et scrollables
 
 ## Solution
 
+Il ne faut pas hésiter à aller dans le menu `Accessibilité` du device et tester les différentes options proposées (le thème sombre, agrandissment etc..)
+
 1. Les couleurs
-    - Le contraste de la question n'est pas suffisant, il faut donc le remplacer par une couleur plus foncée afin de respecter un ratio supérieur à 4,50 
+    - Le contraste de la question n'est pas suffisant, il faut donc le remplacer par une couleur plus foncée afin de respecter un ratio supérieur à 4,50. 
+    Notre premier reflex serait de mettre le texte en noir de cette manière :  `android:textColor="@color/black`. Mais allez donc tester le mode sombre maintenant ! Il faut donc utiliser les thèmes.
 2. Ajout des descriptions
     - Android Studio affiche un warning concertant la description des images. En effet, il faut la rajouter avec le champs `android:contentDescription`
     - Lorsque le TalkBack énonce un élement `Button`, il ajoute le mot "bouton" au libellé fourni par le développeur. Il n'est donc pas nécessaire d'inclure d'informations sur le type ou l'état dans la description.
