@@ -31,7 +31,7 @@ Document officiel contenant la liste des règles pour l'accessibilité
 Les boutons, zones cliquables, images etc. n'ont pas forcément de description par défaut. C'est cette dernière qui sera énoncée par le lecteur d'écran (TalkBack). S'il n'y en a pas, l'utilisateur malvoyant ne peut donc pas connaître la fonctionnalité du bouton. Il est donc important de la compléter, c'est facile et rapide, ne l'oubliez pas.
 
 #### La zone de clique 
-La zone de clique doit être suffisement grande pour qu'une personne malvoyante, ou avec déficience motrice puisse y avoir accès sans difficulté.
+La zone de clique doit être suffisement grande pour qu'une personne malvoiyante, ou avec déficence motrice puisse y avoir accès sans difficulté.
 Il est estimé que la taille est suffisante à partir d'**une zone de 48px par 48px**.
 
 #### Lisibilité et zoom
@@ -39,7 +39,7 @@ Ne pas fixer la taille des écrans car ils doivent être lisibles et scrollables
 
 ## Exercice
 
-1. Tester l'application tel qu'elle est actuellement
+1. Tester l'application telle qu'elle est actuellement
     - Activer le TalkBack : faire lire l'écran à l'outil et regarder les zones encadrées
     - Scanner l'écran avec l'outil *Accessibility Scanner* : des remarques d'amélioration peuvent être proposées
     - Dans Android Studio, ouvrir les fichiers `.xml` et regarder s'il ya. des warning sur les components
@@ -54,4 +54,4 @@ Ne pas fixer la taille des écrans car ils doivent être lisibles et scrollables
     - Android Studio affiche un warning concertant la description des images. En effet, il faut la rajouter avec le champs `android:contentDescription`
     - Lorsque le TalkBack énonce un élement `Button`, il ajoute le mot "bouton" au libellé fourni par le développeur. Il n'est donc pas nécessaire d'inclure d'informations sur le type ou l'état dans la description.
 3. La taille des boutons
-    - La zone de clique des boutons est trop petite (inférieure à 48dp x 48dp), il faut donc ajouter une taille minimale à l'aide des champs `android:minWidth` et `android:minHeight`
+    - La zone de clic des boutons est trop petite (inférieure à 48dp x 48dp), il faut donc ajouter une taille minimale à l'aide des champs `android:minWidth` et `android:minHeight`
