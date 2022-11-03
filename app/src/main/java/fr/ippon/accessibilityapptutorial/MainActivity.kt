@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.apply {
             icValid.setOnClickListener {
-                if (radioButtonYes.isChecked) congratulation.set("Trop bien")
+                if (radioButtonYes.isChecked) congratulation.set("On est d'accord, le fromage c'est la vie !")
                 else if (radioButtonNo.isChecked) congratulation.set("C'est nul")
                 else congratulation.set("Tu n'as pas répondu")
             }
